@@ -2,10 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.portfolio.afunes.Security.Service;
+package com.portfolio.afunes.Service;
 
 import com.portfolio.afunes.Entity.Experiencia;
-import com.portfolio.afunes.Security.Repository.RExperiencia;
+import com.portfolio.afunes.Repository.RExperiencia;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;

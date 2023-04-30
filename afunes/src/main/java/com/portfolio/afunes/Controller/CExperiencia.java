@@ -7,7 +7,7 @@ package com.portfolio.afunes.Controller;
 import com.portfolio.afunes.Dto.dtoExperiencia;
 import com.portfolio.afunes.Entity.Experiencia;
 import com.portfolio.afunes.Security.Controller.Mensaje;
-import com.portfolio.afunes.Security.Service.SExperiencia;
+import com.portfolio.afunes.Service.SExperiencia;
 import java.util.List;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
  */
-package com.portfolio.afunes.Security.Repository;
+package com.portfolio.afunes.Repository;
 
 import com.portfolio.afunes.Entity.Experiencia;
 import java.util.Optional;
