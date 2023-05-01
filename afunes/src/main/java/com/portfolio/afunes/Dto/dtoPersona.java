@@ -1,76 +1,45 @@
-package com.portfolio.afunes.Entity;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.portfolio.afunes.Dto;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.NotBlank;
 
-
-@Entity
-public class Persona {
-    
-    //nombre, apellido, edad, nacionalidad, estadocivil, titulo, domicilio, email, telefono, fb, ig, ds, gh, img
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-    
-    @NotNull
-    @Size(min = 1, max = 50, message = "No cumple con la longitud")
+/**
+ *
+ * @author agufu
+ */
+public class dtoPersona {
+    @NotBlank
     private String nombre;
-    
-    @NotNull
-    @Size(min = 1, max = 50, message = "No cumple con la longitud")
+    @NotBlank
     private String apellido;
-    
-    @NotNull
+    @NotBlank
     private int edad;
-    
-    @Size(min = 1, max = 1500, message = "No cumple con la longitud")
     private String descripcion;
-    
-    @NotNull
-    @Size(min = 1, max = 50, message = "No cumple con la longitud")
+    @NotBlank
     private String nacionalidad;
-    
-    @NotNull
-    @Size(min = 1, max = 50, message = "No cumple con la longitud")
+    @NotBlank
     private String estadoCivil;
-    
-    @Size(min = 1, max = 100, message = "No cumple con la longitud")
     private String titulo;
-    
-    @NotNull
-    @Size(min = 1, max = 50, message = "No cumple con la longitud")
+    @NotBlank
     private String domicilio;
-    
-    @NotNull
-    @Size(min = 1, max = 100, message = "No cumple con la longitud")
+    @NotBlank
     private String email;
-    
-    @NotNull
-    @Size(min = 1, max = 50, message = "No cumple con la longitud")
+    @NotBlank
     private String telefono;
-    
-    @Size(min = 1, max = 100, message = "No cumple con la longitud")
     private String facebook;
-    
-    @Size(min = 1, max = 100, message = "No cumple con la longitud")
     private String instagram;
-    
-    @Size(min = 1, max = 100, message = "No cumple con la longitud")
     private String discord;
-    
-    @Size(min = 1, max = 100, message = "No cumple con la longitud")
     private String github;
-    
+    @NotBlank
     private String img;
 
-    public Persona() {
+    public dtoPersona() {
     }
 
-    public Persona(String nombre, String apellido, int edad, String descripcion, String nacionalidad, String estadoCivil, String titulo, String domicilio, String email, String telefono, String facebook, String instagram, String discord, String github, String img) {
+    public dtoPersona(String nombre, String apellido, int edad, String descripcion, String nacionalidad, String estadoCivil, String titulo, String domicilio, String email, String telefono, String facebook, String instagram, String discord, String github, String img) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
@@ -86,14 +55,6 @@ public class Persona {
         this.discord = discord;
         this.github = github;
         this.img = img;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getNombre() {
@@ -215,6 +176,8 @@ public class Persona {
     public void setImg(String img) {
         this.img = img;
     }
+    
+    
     
     
 }
